@@ -7,7 +7,7 @@ import java.sql.Timestamp;
 
 @Entity
 @Data
-@Table(name = "Course", schema = "javaeee")
+@Table(name = "Course", schema = "final")
 public class Course {
     private int id;//课程id
     private String name;//课程名称

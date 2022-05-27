@@ -28,13 +28,13 @@ public class QuestionBankController {
     }
     @RequestMapping(value = "delete", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseData deleteQuestion(@Param("questionId") int id){
+    public ResponseData deleteQuestion(@RequestParam("questionId") int id){
         questionBankService.deleteQuestion(id);
         return  new ResponseData(ExceptionMsg.SUCCESS,1);
     }
     @RequestMapping(value = "search", method = RequestMethod.POST)
     @ResponseBody
-    public ResponseData searchQuestion(@Param("courseName")String courseName){
+    public ResponseData searchQuestion(@RequestParam("courseName")String courseName){
         questionBankService.searchQuestion(courseName);
         return  new ResponseData(ExceptionMsg.SUCCESS,1);
     }

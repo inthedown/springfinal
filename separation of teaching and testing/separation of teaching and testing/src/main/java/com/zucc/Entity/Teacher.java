@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "teacher" ,schema="javaeee")
+@Table(name = "teacher" ,schema="final")
 public class Teacher {
     private int t_id;//老师的编号
     private String tno;//老师的工号
